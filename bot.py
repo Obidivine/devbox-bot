@@ -129,7 +129,7 @@ class UpgradeView(discord.ui.View):
 @bot.tree.command(name="status", description="Check your subscription status")
 async def status(interaction: discord.Interaction):
     user_id = interaction.user.id
-    whop_link = "https://whop.com/checkout/plan_xxxx"  # Replace with your actual Whop checkout URL
+    whop_link = "https://whop.com/checkout/plan_MnthXPoHaYsbB"  # Replace with your actual Whop checkout URL
     
     # Safely query SQLite connection within the command execution thread
     conn = sqlite3.connect('database.db', timeout=10)
